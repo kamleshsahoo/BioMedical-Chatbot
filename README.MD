@@ -1,4 +1,4 @@
-# Medical-RAG-using-Bio-Mistral-7B
+# BioMedical ChatBot using Bio-Mistral-7B
 
 <img src='chatbot.png' alt="screenshot" style="width:750px; height:450px">  
 <br/>This is a medical chatbot capable of answering questions on the medical domain. The capabilites of the chatbot are improved using a RAG implementation where we use external knowledge sources like pdf/txt files from NIH, PubMed etc. to get more accurate responses.
