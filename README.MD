@@ -1,6 +1,7 @@
 # Medical-RAG-using-Bio-Mistral-7B
 
-This is a medical chatbot capable of answering questions on the medical domain. The capabilites of the chatbot are improved using a RAG implementation where we use external knowledge sources like pdf/txt files from NIH, PubMed etc. to get more accurate responses.
+<img src='chatbot.png' alt="screenshot" style="width:750px; height:450px">  
+<br/>This is a medical chatbot capable of answering questions on the medical domain. The capabilites of the chatbot are improved using a RAG implementation where we use external knowledge sources like pdf/txt files from NIH, PubMed etc. to get more accurate responses.
 
 The chatbot is built using:
 
@@ -11,8 +12,8 @@ The chatbot is built using:
 
 ## How to run
 
-- Install [docker](https://www.docker.com/get-started/) if not installed already and then do `docker pull qdrant/qdrant` and `docker run -p 6333:6333 qdrant/qdrant` to setup the database. The database should be accessible at `localhost:6333/dashboard`
-- Create a python virtual environment. (Below we show using `conda` package manager. For Linux/MacOS, `pip` should work well)  
+- Install [docker](https://www.docker.com/get-started/) if not installed already and then do `docker pull qdrant/qdrant`(req. only for the first time) and then `docker run -p 6333:6333 qdrant/qdrant` to setup the database. The database should be accessible at `localhost:6333/dashboard`
+- Create a python virtual environment. (Below we show using `conda` package manager. For Linux/MacOS, `pip3` should work well)  
   `conda env create -f environment.yml`
   and then `conda activate biorag`
 - Download the Bio-Mistral-7B model from [here](https://huggingface.co/MaziyarPanahi/BioMistral-7B-GGUF) (not on the git repo due to size constraints). We are using the quantized version for fast inference.
